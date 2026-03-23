@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Image Caption Generator</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Image Caption Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
 
-<header>
-<h1>Deep Learning Based Image Caption Generation System</h1>
-<p>Upload an image and let AI generate captions</p>
-</header>
+<div class="background">
+<div class="overlay">
+
+<div class="navbar">
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+    <a href="/admin">Admin</a>
+</div>
 
 <div class="container">
+    <h1>Deep Learning Based Image Caption Generation System</h1>
 
-<div class="blog">
+    <div class="section">
+        <h2>Abstract</h2>
+        <p>
+        This system uses deep learning techniques (CNN + LSTM) to automatically generate
+        captions for images. It helps in understanding visual content and improves accessibility.
+        </p>
+    </div>
 
-<h2>About Project</h2>
-
-<p>
-Image Caption Generation combines <b>Computer Vision</b> and
-<b>Natural Language Processing</b> to automatically generate
-descriptions for images.
-</p>
-
-<p>
-Deep learning models such as CNN and LSTM analyze images
-and produce human-like captions.
-</p>
-
-</div>
-
-<div class="upload-box">
-
-<h2>Upload Image</h2>
-
-<form action="/predict" method="POST" enctype="multipart/form-data">
-
-<input type="file" name="image" required>
-
-<br><br>
-
-<button type="submit">Generate Caption</button>
-
-</form>
+    <div class="section">
+        <h2>Features</h2>
+        <ul>
+            <li>Automatic caption generation</li>
+            <li>Deep learning based model</li>
+            <li>User-friendly interface</li>
+            <li>Supports real-time image input</li>
+        </ul>
+    </div>
 
 </div>
 
+</div>
 </div>
 
 </body>
