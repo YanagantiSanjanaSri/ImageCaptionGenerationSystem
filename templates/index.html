@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Caption Generator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+<h1>Deep Learning Based Image Caption Generation System</h1>
+<p>Upload an image and let AI generate captions</p>
+</header>
+
+<div class="container">
+
+<div class="blog">
+
+<h2>About Project</h2>
+
+<p>
+Image Caption Generation combines <b>Computer Vision</b> and
+<b>Natural Language Processing</b> to automatically generate
+descriptions for images.
+</p>
+
+<p>
+Deep learning models such as CNN and LSTM analyze images
+and produce human-like captions.
+</p>
+
+</div>
+
+<div class="upload-box">
+
+<h2>Upload Image</h2>
+
+<form action="/predict" method="POST" enctype="multipart/form-data">
+
+<input type="file" name="image" required>
+
+<br><br>
+
+<button type="submit">Generate Caption</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>
